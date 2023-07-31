@@ -42,16 +42,18 @@ a {
 }
 
 /*=============== header=============== */
-.header {
-  position: relative;
-  background-color: #e6f0ff;
-  height: 100vh;
-}
 
+.fixing-header {
+  background-color: #e6f0ff;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding: 12px;
 }
 .navbar ul {
   display: flex;
@@ -66,6 +68,11 @@ a {
 .navbar ul li :hover {
   border-bottom: 2px solid #4f5361;
 }
+.header {
+  position: relative;
+  background-color: #e6f0ff;
+  height: calc(100vh - 90px);
+}
 .actions {
   margin-left: auto;
 }
@@ -79,10 +86,10 @@ a {
   padding: 13px 20px;
   border-radius: 8px;
 }
-.hero {
-  margin-top: 130px;
+.hero-wrap {
 }
 .hero .infor {
+  padding-top: 130px;
   width: 51%;
 }
 .hero .sup-title {
