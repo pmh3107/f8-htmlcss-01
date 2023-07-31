@@ -555,7 +555,9 @@ a {
 .footer .social-link:first-child {
   margin-left: 0;
 }
-
+.footer img:hover {
+  opacity: 0.5;
+}
 .footer .row-bottom {
   margin: 0;
   margin-top: 81px;
