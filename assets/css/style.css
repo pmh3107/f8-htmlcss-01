@@ -143,9 +143,9 @@ a {
 .row .rate {
   margin-top: 18.15px;
 }
-.row-bottom {
+.client .row-bottom {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 70px;
 }
 .row-bottom a {
