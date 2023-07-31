@@ -72,11 +72,6 @@ a {
 .navbar ul li :hover {
   border-bottom: 2px solid #4f5361;
 }
-.header {
-  position: relative;
-  background-color: #e6f0ff;
-  height: calc(100vh - 90px);
-}
 .actions {
   margin-left: auto;
 }
@@ -90,25 +85,32 @@ a {
   padding: 13px 20px;
   border-radius: 8px;
 }
-.hero .infor {
-  padding-top: 130px;
+.hero-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e6f0ff;
+  height: calc(100vh - 90px);
+}
+.hero-wrap .infor {
   width: 51%;
 }
-.hero .sup-title {
+.hero-wrap .sup-title {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: #687690;
 }
-.hero .title {
+.hero-wrap .title {
   margin-top: 8px;
   color: #000336;
   font-weight: 700;
   font-size: 6.4rem;
   line-height: 1.19; /* 118.75% */
 }
-.hero .desc {
+.hero-wrap .desc {
   margin-top: 30px;
   color: #5a6473;
   font-size: 1.8rem;
@@ -116,14 +118,14 @@ a {
   line-height: 1.18; /* 177.778% */
 }
 
-.hero .hero-ctl {
+.hero-wrap .hero-ctl {
   margin-top: 40px;
   min-width: 170px;
 }
-.hero .hero-ctl:hover {
+.hero-wrap .hero-ctl:hover {
   opacity: 0.5;
 }
-.hero img {
+.hero-wrap img {
   position: absolute;
   right: calc((100vw - 1110px) / 2 - 100px);
   bottom: 0;
