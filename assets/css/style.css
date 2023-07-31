@@ -10,6 +10,10 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 
 /* common */
 a {
@@ -85,8 +89,6 @@ a {
 .actions .action-btn {
   padding: 13px 20px;
   border-radius: 8px;
-}
-.hero-wrap {
 }
 .hero .infor {
   padding-top: 130px;
@@ -565,7 +567,9 @@ a {
 .footer img:hover {
   opacity: 0.5;
 }
-.footer .row-bottom {
+.row-bottom {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-top: 81px;
 }
